@@ -7,8 +7,19 @@
 </head>
 <body>
     <script>
-        let userName = prompt("Please enter your full name: ");
-        alert(`Hello, ${userName}! How are you?`)
+        let userInput = prompt("Please enter your three-digit number:")
+        if(+userInput[0] === +userInput[1] && +userInput[1] === +userInput[2]){
+            console.log("Всі цифри однакові? TRUE")
+        }
+        else{
+            console.log("Всі цифри однакові? FALSE")
+        }
+        if(+userInput[0] === +userInput[1] || +userInput[0] === +userInput[2] || +userInput[1] === +userInput[2]){
+            console.log("Є серед цифр цифри однакові? TRUE")
+        }
+        else(
+            console.log("Є серед цифр цифри однакові? FALSE")
+        )
     </script>
 </body>
 </html>
