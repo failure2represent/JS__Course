@@ -23,6 +23,9 @@ let userCity = prompt("Please enter the city where you live:");
         else if(!isNaN(userCity)){
             console.log("You didn't enter the city correctly!")
         }
+        else if(isNaN(+userCity)){
+            console.log("You didn't enter the city correctly!")
+        }
         else console.log(`You live in ${userCity.charAt(0).toUpperCase() + userCity.slice(1)}`)
     }
     else console.log("Too bad you didn't want to specify your city (╥﹏╥)")
@@ -30,6 +33,9 @@ let userCity = prompt("Please enter the city where you live:");
 let userSportKind = prompt("Please enter your favourite kind of sport:");
     if(userSportKind){
         if(!isNaN(userSportKind)){
+            console.log("You didn't enter the sport correctly!")
+        }
+        else if(isNaN(+userSportKind)){
             console.log("You didn't enter the sport correctly!")
         }
         else{
