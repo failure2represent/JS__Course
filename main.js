@@ -1,9 +1,12 @@
 let userBirthYear = prompt("Please enter your birth year (YYYY):");
 let userAge = 2024 - userBirthYear
-    if(userBirthYear){
-        console.log(`Your age is ${userAge}`)
+    if(!userBirthYear){
+        console.log("Too bad you didn't want to specify the year of birth (╥﹏╥)")
     }
-    else console.log("Too bad you didn't want to specify the year of birth (╥﹏╥)")
+    else if(isNaN(userBirthYear)){
+        console.log("Too bad you didn't enter the year correctly (╥﹏╥)")
+    }
+    else console.log(`Your age is ${userAge}`)
 
 let userCity = prompt("Please enter the city where you live:");
     if(userCity){
@@ -33,6 +36,9 @@ let userSportKind = prompt("Please enter your favourite kind of sport:");
                 break;
             case "soccer":
                 console.log("Huh, you wanna play soccer instead of rugby ?  (ㆆ _ ㆆ)");
+                break;
+            default:
+                console.log(`Your favourite sport is ${userSportKind.charAt(0).toUpperCase() + userSportKind.slice(1)}`)
                 break;
         }
     }
