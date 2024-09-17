@@ -32,8 +32,8 @@ function Trim(userInput, TrimArray){
             letterArray[i] = "";
         }
     }
-    let result = letterArray.join("");
-    return result;
+    userInput = letterArray.join("");
+    return userInput;
 }
 
 console.log(Trim(userInput, TrimArray))
