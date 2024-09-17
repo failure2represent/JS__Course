@@ -23,7 +23,7 @@ while(true){
     else break;
 }
 
-let TrimArray = [x.toLowerCase(),y.toLowerCase()];
+let trimArray = [x.toLowerCase(),y.toLowerCase()];
 
 function Trim(userInput, trimArray){
     letterArray = userInput.split("");
@@ -38,20 +38,20 @@ function Trim(userInput, trimArray){
 
 console.log(Trim(userInput, trimArray))
 
-// let A = prompt();
+// let userInput = prompt();
 // let x = prompt();
 // let y = prompt();
 
-// let XY = [x,y];
+// let trimArray = [x,y];
 
-// function Trim(A,XY){
-//     letterArr = A.split("");
+// function Trim(userInput,trimArray){
+//     letterArr = userInput.split("");
 //     for(let char in letterArr){
-//         if(XY.includes(letterArr[char])){
+//         if(trimArray.includes(letterArr[char])){
 //             letterArr[char] = "";
 //         }
 //     }
-//     A = letterArr.join("");
-//     return A
+//     userInput = letterArr.join("");
+//     return userInput
 // }
-// console.log(Trim(A,XY))
+// console.log(Trim(userInput,trimArray))
