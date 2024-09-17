@@ -25,10 +25,10 @@ while(true){
 
 let TrimArray = [x.toLowerCase(),y.toLowerCase()];
 
-function Trim(userInput, TrimArray){
+function Trim(userInput, trimArray){
     letterArray = userInput.split("");
     for(i = 0; i < letterArray.length; i++){
-        if(TrimArray.includes(letterArray[i].toLowerCase())){
+        if(trimArray.includes(letterArray[i].toLowerCase())){
             letterArray[i] = "";
         }
     }
@@ -36,4 +36,22 @@ function Trim(userInput, TrimArray){
     return userInput;
 }
 
-console.log(Trim(userInput, TrimArray))
+console.log(Trim(userInput, trimArray))
+
+// let A = prompt();
+// let x = prompt();
+// let y = prompt();
+
+// let XY = [x,y];
+
+// function Trim(A,XY){
+//     letterArr = A.split("");
+//     for(let char in letterArr){
+//         if(XY.includes(letterArr[char])){
+//             letterArr[char] = "";
+//         }
+//     }
+//     A = letterArr.join("");
+//     return A
+// }
+// console.log(Trim(A,XY))
