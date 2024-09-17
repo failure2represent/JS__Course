@@ -36,5 +36,4 @@ function Trim(userInput, TrimArray){
     return result;
 }
 
-let result = Trim(userInput, TrimArray)
-console.log(result)
+console.log(Trim(userInput, TrimArray))
