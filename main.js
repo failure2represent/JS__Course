@@ -4,7 +4,7 @@ const user = {
     age: 30,
     city: 'Lviv',
     getFullData() {
-        return `${this.name} ${this.surname}, ${this.age} y/o, ${this.city}`;
+        return `User name: ${this.name}\nUser surname: ${this.surname}\nUser age: ${this.age}\nUser city: ${this.city}\nUser full data: ${this.name} ${this.surname}, ${this.age} y/o, ${this.city}`;
     }
 }
 
