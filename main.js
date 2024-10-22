@@ -18,15 +18,9 @@ const contactInfo = {
         console.log(`Contact "${name}" added successfully`);
     }
 }
-const defaultContactList = [...contactInfo.contactList] 
 
 console.log(contactInfo.getContactName("John"));
 console.log(contactInfo.getContactName("Bim"));
 
-console.log(defaultContactList, "==> default contact list"); 
-
 contactInfo.addNewContact("Tim", "t@t.com", "123-123-1534");
-console.log(contactInfo.contactList,); 
-contactInfo.addNewContact("John", "jh2@t.com", "123-133-6534");
 console.log(contactInfo.contactList,);
-console.log(contactInfo.getContactName("John"));
