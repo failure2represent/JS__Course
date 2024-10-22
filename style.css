@@ -1,0 +1,10 @@
+table{
+    width: 50%;
+    margin: auto;
+    padding-top: 70px;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
